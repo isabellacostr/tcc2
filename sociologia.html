@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Sociologia</title>
+  <link rel="stylesheet" href="sociologia.css">
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <div class="quiz-container">
+      <h1>Quiz de Sociologia</h1>
+      <p class="description">Teste seus conhecimentos sobre Sociologia em diferentes níveis de dificuldade.</p>
+      <div id="level-container">
+        <button class="level-btn" id="btn-facil" onclick="startQuiz('facil')">Fácil</button>
+        <button class="level-btn" id="btn-medio" onclick="startQuiz('medio')">Médio</button>
+        <button class="level-btn" id="btn-dificil" onclick="startQuiz('dificil')">Difícil</button>
+      </div>
+      <div id="quiz" class="quiz-content" style="display:none;">
+        <div id="question-container">
+          <h2 id="question">Pergunta</h2>
+          <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <div id="feedback"></div>
+        <button id="next-btn" class="next-btn" onclick="nextQuestion()" style="display:none;">Próxima</button>
+      </div>
+    </div>
+
+    
+         <!-- Assessibiliade libras -->
+         <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+  </div>
+  <script src="sociologia.js"></script>
+</body>
+</html>

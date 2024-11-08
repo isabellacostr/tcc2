@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Mind</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+
+    <header>
+    
+      <!-- Botão modo claro e escuro -->  
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider"></span>
+        </label>
+    
+        <script src="pagina.js"></script>
+
+     <!--Logo e login -->  
+
+     <div id="menu1" class="logo">
+        <center><img src="imagens/logo.png" height="150px"; width="150px"> </center> 
+     </div>
+    </header>
+
+      
+       <!-- Menu --> 
+
+      <nav>
+            <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li><br>
+                <li><a href="#sobre">Nos conheça</a></li><br>
+                <li><a href="#cursos">Nossos cursos</a></li><br>
+                <li><a href="pagina2.html">Quizzes</a>
+                  <div class="dropdown-content">
+                    <ul class="list">
+                        <li><a href="portugues.html">Lingua Portuguesa</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="ingles.html">Inglês</a></li>
+                        <li><a href="sociologia.html">Sociologia</a></li>
+                        <li><a href="filosofia.html">Filosofia</a></li>
+                    </ul>
+                    <ul class="list">
+                      <li><a href="matematica.html">Matemática</a></li>
+                      <li><a href="quimica.html">Química</a></li>
+                      <li><a href="fisica.html">Física</a></li>
+                      <li><a href="biologia1.html">Biologia</a></li>
+                      <li><a href="geografia.html">Geografia</a></li>
+                    </ul>
+                </li><br>
+            </ul>
+        </nav>
+
+     <!-- Bem Vindo ao site -->
+    <main id="main-content">
+        <section id="inicio" class="hero">
+            <center><h1>BEM VINDO AO MASTER MIND</h1></center>
+        </section>
+
+
+     <!-- Nos conheça -->
+        <section id="sobre" class="section">
+           <center><h2>Nos conheça</h2>
+            
+            <p>   No Master Mind, acreditamos que a educação é para todos, e o desenvolvimento de sistemas educativos inclusivos é a chave para transformar esse ideal em realidade. 
+            <br>  Nosso compromisso é promover uma educação que abrace a diversidade, respeite as diferenças e ofereça a cada aluno a chance de florescer.
+            <br>  Com uma visão de inclusão profunda e estratégias inovadoras, nosso site busca ser uma fonte de inspiração e recursos para educadores, famílias e comunidades 
+            <br>  que desejam fazer parte dessa transformação. 
+            <br>  Aqui, compartilhamos práticas, tecnologias e políticas que pavimentam o caminho para um ensino mais justo e acessível, 
+            <br>  onde cada aluno é valorizado por suas capacidades únicas.
+            <br>  Junte-se a nós nessa jornada por uma educação que não deixa ninguém para trás.</p>
+        </section></center>
+
+
+     <!--Nossos cursos --> 
+        <section id="cursos" class="section">
+            <h2>Nossos Cursos</h2>
+            <div class="course">
+                <h3>Curso de Linguagem de Sinais</h3>
+                <p>
+                    Este curso oferece uma introdução prática e teórica à Linguagem de Sinais, focando na comunicação eficaz com pessoas surdas e deficientes auditivas. 
+                    Os participantes aprenderão o alfabeto manual, sinais básicos para a comunicação do dia a dia, e frases úteis para conversas comuns. 
+                    O curso também abrange aspectos culturais e sociais da comunidade surda, promovendo uma compreensão mais profunda e respeitosa.
+                    </p>                   
+            </div>
+
+            <div class="course">
+                <h3>Curso de Braille</h3>
+                <p>Curso completo para alfabetização em Braille. O Curso de Braille é a oportunidade perfeita para você dominar o sistema de leitura e escrita que empodera pessoas com deficiência visual. Com ele, você vai adquirir as habilidades necessárias para se comunicar, ensinar e fazer a diferença na vida de milhares de pessoas.</p>
+            </div>
+            <div class="course">
+                <h3>Curso de Tecnologia Assistiva</h3>
+                <p>Descubra como a Tecnologia Assistiva pode transformar a vida de pessoas com deficiência e necessidades especiais com o nosso curso completo. Desenvolvido para quem deseja fazer a diferença no mundo da inclusão, este curso vai te capacitar a usar e implementar as mais modernas ferramentas e dispositivos que ampliam a autonomia e qualidade de vida.</p>
+            </div>
+        </section>
+
+    
+        <!--Contato --> 
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <p>Fale conosco para mais informações sobre nossos programas inclusivos.</p>
+            <form action="#">
+
+
+
+        <!-- Formulário cliente -->         
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" aria-label="Nome completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" aria-label="Endereço de email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" aria-label="Sua mensagem" required></textarea>
+
+                <button type="submit" class="btnenviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+   
+
+         <!-- Assessibiliade libras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+ 
+ <!-- Rodapé-->
+
+ <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>&copy; 2024 Master Mind.</h4>
+        <h3>Todos os direitos reservados.</h3>
+        <p>
+          📞 Telefone: (00) 0000-0000 <br>
+          ✉️ E-mail: <a href="mailto:contato@exemplo.com">faleconosco@mastermind.com</a>
+        </p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        -------------------------------
+        <ul>
+          <li><a href="#contato">Master Mind</a></li>
+          <li><a href="politica.html">Política de Privacidade</a></li>
+          <li><a href="#termos">Termos de Uso</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-social">
+        <h4>Siga o Master Mind</h4>
+        -------------------------------
+        <ul>
+          <li><a href="https://www.facebook.com/login/?locale=pt_BR">Facebook</a></li>
+          <li><a href="https://www.instagram.com/accounts/login/">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/">YouTube</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-support">
+        <h4>Suporte</h4>
+        -------------------------------
+        <p>
+          📧 E-mail de Suporte: <a href="mailto:suporte@exemplo.com">suporte@mastermind.com</a> <br>
+        </p>
+      </div>
+    </div>
+
+    
+  </footer>
+  
+
+</body>
+</html>

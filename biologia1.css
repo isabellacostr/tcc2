@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #CDD9A0;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .quiz-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #A5BF6B 20%, #CDD9A0 80%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #A5BF6B;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #80A62E;
+    margin-bottom: 30px;
+  }
+  
+  .level-btn {
+    background-color: #4D7327;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .level-btn:hover {
+    background-color: #4D7327;
+    transform: translateY(-5px);
+  }
+  
+  .quiz-content {
+    margin-top: 20px;
+  }
+  
+  #question {
+    font-size: 1.5rem;
+    color: #4D7327;
+  }
+  
+  .btn-container {
+    margin: 20px 0;
+  }
+  
+  .btn-container button {
+    background-color: #A5BF6B;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-container button:hover {
+    background-color: #4D7327;
+    transform: translateY(-5px);
+  }
+  
+  .next-btn {
+    background-color: #80A62E;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: none;
+  }
+  
+  .next-btn:hover {
+    background-color: #80A62E;
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .level-btn, .next-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    #question {
+      font-size: 1.2rem;
+    }
+  
+    .btn-container button {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }

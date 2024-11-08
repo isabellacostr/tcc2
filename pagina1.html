@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos conheça</title>
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+
+<header>
+<body>
+
+      <!-- Botão modo claro e escuro -->  
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider"></span>
+    </label>
+
+    <script src="pagina.js"></script>
+
+ <!--Logo e login -->  
+
+ <div id="menu1" class="logo">
+    <center><img src="imagens/logo.png" height="150px"; width="150px"> </center> 
+ </div>
+
+</header>
+
+  
+   <!-- Menu --> 
+   
+  <nav>
+        <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li><br>
+            <li><a href="#sobre">Nos conheça</a></li><br>
+            <li><a href="#cursos">Nossos cursos</a></li><br>
+            <li><a href="pagina2.html">Quizzes</a></li><br>
+        </ul>
+    </nav>
+
+    <section class="galeria">
+        <div class="fotos">
+            <img src="foto1.jpg" alt="Foto da empresa 1" class="foto" data-foto="foto1.jpg">
+            <img src="foto2.jpg" alt="Foto da empresa 2" class="foto" data-foto="foto2.jpg">
+            <img src="foto3.jpg" alt="Foto da empresa 3" class="foto" data-foto="foto3.jpg">
+            <img src="foto4.jpg" alt="Foto da empresa 4" class="foto" data-foto="foto4.jpg">
+        </div>
+    </section>
+    
+    <!-- Modal para visualizar imagem ampliada -->
+    <div id="modal" class="modal">
+        <span id="closeModal">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+    
+ <!-- Nos conheça -->
+ <section id="sobre" class="section">
+   
+    <center> 
+        <h2>Nos conheça</h2>
+        <p>   No Master Mind, acreditamos que a educação é para todos, e o desenvolvimento de sistemas educativos inclusivos é a chave para transformar esse ideal em realidade. 
+        <br>  Nosso compromisso é promover uma educação que abrace a diversidade, respeite as diferenças e ofereça a cada aluno a chance de florescer.
+        <br>  Com uma visão de inclusão profunda e estratégias inovadoras, nosso site busca ser uma fonte de inspiração e recursos para educadores, famílias e comunidades 
+        <br>  que desejam fazer parte dessa transformação. 
+        <br>  Aqui, compartilhamos práticas, tecnologias e políticas que pavimentam o caminho para um ensino mais justo e acessível, 
+        <br>  onde cada aluno é valorizado por suas capacidades únicas.
+        <br>  Junte-se a nós nessa jornada por uma educação que não deixa ninguém para trás.</p></center>
+</section>
+
+
+<!-- Nossa equipe -->
+<section class="equipe">
+    <div class="card">
+        <img src="ceo.jpg" alt="Foto do CEO">
+        <h3>Isabella Costadelli  CEO</h3>
+        <p>Isabella tem mais de 20 anos de experiência no setor de tecnologia e lidera a empresa desde sua fundação.</p>
+    </div>
+    <div class="card">
+        <img src="designer.jpg" alt="Foto do Designer">
+        <h3>Evellyn Almeida  Designer</h3>
+        <p>Evellyn é responsável por criar soluções visuais incríveis e funcionais para os nossos clientes.</p>
+    </div>
+</section>
+<section class="equipe">
+    <div class="card">
+        <img src="ceo.jpg" alt="Foto do CEO">
+        <h3>Isabelli Guimarães  CTO</h3>
+        <p>Isabella tem mais de 20 anos de experiência no setor de tecnologia e lidera a empresa desde sua fundação.</p>
+    </div>
+    <div class="card">
+        <img src="designer.jpg" alt="Foto do Designer">
+        <h3>Juliana Dos Santos  CTO</h3>
+        <p>Evellyn é responsável por criar soluções visuais incríveis e funcionais para os nossos clientes.</p>
+    </div>
+</section>
+
+      <!-- Assessibiliade libras -->
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+</body>
+</html>
+</body>
+</html>
